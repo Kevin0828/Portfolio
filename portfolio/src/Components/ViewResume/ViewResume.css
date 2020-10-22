@@ -1,0 +1,75 @@
+
+
+.button-container
+{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 150px;
+    text-decoration: none;
+}
+
+
+.resume-btn
+{
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #B0E0E6;
+    border-radius: 0.6em;
+    color: #B0E0E6;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+    color: #fff;
+    outline: 0;
+    text-decoration: none;
+
+}
+
+.resume-btn {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    text-decoration: none;
+}
+
+
+.resume-btn:hover {
+    box-shadow: 0 0 40px 40px #B0E0E6 inset;
+    text-decoration: none;
+}
+
+.resume-link:link {
+    text-decoration: none;
+  }
+  
+  .resume-link:visited {
+    text-decoration: none;
+  }
+  
+  .resume-link:hover {
+    text-decoration: none;
+  }
+  
+  .resume-link:active {
+    text-decoration: none;
+  }

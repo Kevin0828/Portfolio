@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fredoka+One&display=swap');
+
+.fade-in-fast
+{
+
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 3s; /* Firefox < 16 */
+     -ms-animation: fadein 3s; /* Internet Explorer */
+      -o-animation: fadein 3s; /* Opera < 12.1 */
+         animation: fadein 3s;
+}
+
+@keyframes fadein {
+ from { opacity: 0; }
+ to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+ from { opacity: 0; }
+ to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+ from { opacity: 0; }
+ to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+ from { opacity: 0; }
+ to   { opacity: 1; }
+}
+
+
+.profile-img
+{
+    border-radius: 100%;
+    border: 5px solid #555;
+    border-color: white;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: relative;
+
+    box-shadow: 10px 5px 50px 5px black;
+
+    transition: all 1.3s;
+}
+
+.profile-img:hover {
+    transform: scale(1.4);
+  }
+
+
+.profile-name
+{
+    font-family: 'Fredoka One', cursive;
+    font-size: 50px;
+    color:white;
+    text-align: center;
+    top:40px;
+    position: relative;
+}
+
+.description
+{
+    font-size: 25px;
+    text-align: center;
+    top:80px;
+}
+
+.profile-name div{
+    position:relative;
+    width:100px;
+    height:100px;
+    border:1px solid #ccc;
+    float:left;
+    margin-right:5px;
+    
+}
+.profile-name span
+{
+    position:absolute;
+    bottom:0;
+    right:0;
+
+}

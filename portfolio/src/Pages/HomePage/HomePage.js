@@ -1,18 +1,18 @@
 import React from 'react';
-
+import NavBar from '../../Components/NavBar/NavBar';
+import ProfileSection from '../../PageSections/ProfileSection/ProfileSection';
+import ProjectSection from '../../PageSections/ProjectSection/ProjectSection';
 
 class HomePage extends React.Component
 {
-
-
     render() {
         return (
             <div>
-                <h1>this will be the resume link section</h1>
+                <NavBar />
+                <ProfileSection />
 
-                <h2>this will be the resume section</h2>
+                <ProjectSection />
 
-                <h3>this will be the footer section</h3>
             </div>
         );
     }

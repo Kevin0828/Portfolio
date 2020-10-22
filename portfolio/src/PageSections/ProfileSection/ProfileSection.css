@@ -1,0 +1,24 @@
+
+
+#profile
+{
+    background-image: linear-gradient(90deg, #0F5298, #1b0c79, #0F5298);
+    width: 100%;
+    height: 600px;
+}
+
+.wrapper
+{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+@media only screen and (max-width: 990px) {
+    #profile {
+        background-image: linear-gradient(90deg, #0F5298, #1b0c79, #0F5298);
+    }
+}
