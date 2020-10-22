@@ -15,9 +15,6 @@ class ProjectSection extends React.Component {
                     <div class="card-deck">
                             <ProjectCard />
                             <ProjectCard />
-                            <ProjectCard />
-                            <ProjectCard />
-                            <ProjectCard />
                         </div>
 
 
