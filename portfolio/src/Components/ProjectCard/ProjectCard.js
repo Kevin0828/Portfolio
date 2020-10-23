@@ -7,8 +7,8 @@ class ProjectCard extends React.Component {
     render() {
         return (
             <div className="col-sm-6">
-                <Card className="project-card-individual">
-                    <Card.Img  variant="top" src="https://www.imgacademy.com/sites/default/files/airports-new.jpg" />
+                <Card className="project-card-individual fade-in-fast">
+                    <Card.Img  variant="top" src= {this.props.logo} />
                     <Card.Body>
 
                         <Card.Title>{this.props.title}</Card.Title>
@@ -18,6 +18,8 @@ class ProjectCard extends React.Component {
                         </Card.Text>
 
                         <Button variant="success">See more...</Button>
+
+                        <img></img>
 
                     </Card.Body>
                 </Card>
