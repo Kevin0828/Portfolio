@@ -12,9 +12,8 @@ class ProjectSection extends React.Component {
                     <div className="project-txt-wrap"><span className="project-txt">Projects</span></div>
 
 
-                    <div className="container">
-                        <div className="row">
-                            
+                    <div className="container project-card-container">
+                        <div className="row project card-row">
                                     <ProjectCard />
                                     <ProjectCard />
                                     <ProjectCard />

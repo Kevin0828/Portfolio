@@ -37,12 +37,7 @@
     bottom:0;
 }
 
-.card-deck
-{
-    display: flex;
-    flex-direction: row;
-    flex:1;
-}
+
 
 @media only screen and (max-width: 574px) 
 {
