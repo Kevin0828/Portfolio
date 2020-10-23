@@ -8,7 +8,7 @@ class ProfileSection extends React.Component
     render() {
         return (
             <section id = "profile">
-                <div className = "wrapper">
+                <div className = "profile-wrapper">
 
                     <ProfileLayout />
                     <ResumeLayout />

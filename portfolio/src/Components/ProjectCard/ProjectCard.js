@@ -6,9 +6,8 @@ import './ProjectCard.css';
 class ProjectCard extends React.Component {
     render() {
         return (
-
-            <div class="w-100 d-4 d-sm-4 d-md-4">
-                <Card className="card mb-4" >
+            <div className="col-sm-6">
+                <Card className="project-card-individual">
                     <Card.Img variant="top" src="https://www.imgacademy.com/sites/default/files/airports-new.jpg" />
                     <Card.Body>
                         <Card.Title>Card Title</Card.Title>

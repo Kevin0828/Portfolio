@@ -7,17 +7,20 @@ class ProjectSection extends React.Component {
     render() {
         return (
             <section id="projects">
-                <div className="wrapper">
+                <div className="project-wrapper">
 
-                    <div><span className="project-txt">Projects</span></div>
+                    <div className="project-txt-wrap"><span className="project-txt">Projects</span></div>
 
 
-                    <div class="card-deck">
-                            <ProjectCard />
-                            <ProjectCard />
+                    <div className="container">
+                        <div className="row">
+                            
+                                    <ProjectCard />
+                                    <ProjectCard />
+                                    <ProjectCard />
+                                    <ProjectCard />
                         </div>
-
-
+                    </div>
                 </div>
             </section>
         );
