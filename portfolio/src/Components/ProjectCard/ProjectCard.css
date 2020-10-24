@@ -12,10 +12,45 @@
     
 }
 
-.project-card-individual
+.image-holder-animation
+{
+	-webkit-transition: .3s ease-in-out;
+    transition: 1s ease-in-out;
+    overflow: hidden;
+}
+
+.figure {
+	overflow: hidden;
+}
+
+.project-card-individual 
 {
     box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.2);
     transition: 1s;
+}
+
+.project-card-individual figure img
+{
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+    transition: 1s ease-in-out;
+}
+
+.project-card-individual figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.card-links
+{
+    float: left;
+}
+
+.card-project-links
+{
+    max-width: 20px;
+    max-height: 20px;
 }
 
 @media only screen and (max-width: 574px) 
