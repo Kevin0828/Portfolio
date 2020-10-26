@@ -32,7 +32,6 @@ class ProjectCard extends React.Component {
                         <Card.Text id="project-card-skills">
                            <div className = "project-card-skills-box"> {this.props.skill_1} </div>
                            <div className = "project-card-skills-box"> {this.props.skill_2} </div>
-                           <div className = "project-card-skills-box"> {this.props.skill_3} </div>
                         </Card.Text>
 
     
