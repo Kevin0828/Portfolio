@@ -1,0 +1,25 @@
+
+
+
+{
+    "Card_1" :
+    [
+        {
+        "title": "J.P. Morgan Chase Hackathon Project",
+        "subTitle": "Web-App",
+        "cardLogo": "https://1000logos.net/wp-content/uploads/2020/04/J.P.-Morgan-Chase-Logo.png",
+    
+        "text": "Our elderly are having a hard time to communicate with this pandemic going on. Most systems are way too complex for them to catch up. We developed a very simple to use web-app where anyone can easily navigate and enjoy.",
+
+        "skill_1" : " React ", 
+        "skill_2" : " PHP ", 
+        "skill_3" : " SQL ",
+  
+        "link_1": "https://codeforgood.bemyapp.com/#/projects/5f88eb1d3c3b31001b191e88",
+        "link_2": "https://drive.google.com/file/d/1OzmH4O21x4SyDX5WJMr4AkjM8qMm8Id7/view",
+
+        "image_1": "https://www.pngrepo.com/png/59321/180/information-icon.png",
+        "image_2": "https://cdn0.iconfinder.com/data/icons/controls-essential/48/v-02-512.png"
+    }
+    ]
+}

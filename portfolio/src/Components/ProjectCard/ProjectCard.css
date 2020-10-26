@@ -45,12 +45,21 @@
 .card-links
 {
     float: left;
+    width: 200px;
+    height: 20px;
+
+}
+
+.card-links a
+{
+    
+    padding: 10px;
 }
 
 .card-project-links
 {
-    max-width: 20px;
-    max-height: 20px;
+    max-width: 40px;
+    max-height: 40px;
 }
 
 @media only screen and (max-width: 574px) 
