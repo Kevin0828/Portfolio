@@ -8,8 +8,9 @@ class ProjectCard extends React.Component {
         return (
             <div className="col-sm-6">
                 <Card className="project-card-individual fade-in-fast">
-                    <div className = "image-holder-animation">
-                        <figure>
+                    <div className="image-holder-animation">
+
+                        <figure className = "project-card-logo">
                             <Card.Img variant="top" src={this.props.cardLogo} />
                         </figure>
                     </div>
@@ -21,26 +22,25 @@ class ProjectCard extends React.Component {
                             {this.props.subTitle}
                         </Card.Subtitle>
 
-                        <hr></hr>
+                        <hr />
 
-                        <Card.Text>
+                        <Card.Text className="project-card-text-description">
                             {this.props.text}
                         </Card.Text>
 
-                        <Card.Text>
-                            {this.props.skill_1}
-                            {this.props.skill_2}
-                            {this.props.skill_3}
+                    
+                        <Card.Text id="project-card-skills">
+                           <div className = "project-card-skills-box"> {this.props.skill_1} </div>
+                           <div className = "project-card-skills-box"> {this.props.skill_2} </div>
+                           <div className = "project-card-skills-box"> {this.props.skill_3} </div>
                         </Card.Text>
 
-                        
+    
+                        <Card.Link target="_blank" href={this.props.link_1}><img alt="" className="card-project-links" src={this.props.image_1} /></Card.Link>
+                        <Card.Link target="_blank" href={this.props.link_2}><img alt="" className="card-project-links" src={this.props.image_2} /></Card.Link>
+                        <Card.Link target="_blank" href={this.props.link_3}><img alt="" className="card-project-links" src={this.props.image_3} /></Card.Link>
 
 
-                        <div className="card-links">
-                            <a target="_blank" href={this.props.link_1}><img alt="" className="card-project-links" src={this.props.image_1} /></a>
-                            <a href={this.props.link_2}><img alt="" className="card-project-links" src={this.props.image_2} /></a>
-                            <a href={this.props.link_3}><img alt="" className="card-project-links" src={this.props.image_3} /></a>
-                        </div>
                     </Card.Body>
                 </Card>
             </div>

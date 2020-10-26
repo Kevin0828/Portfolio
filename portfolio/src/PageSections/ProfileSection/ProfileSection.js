@@ -2,6 +2,7 @@ import React from 'react';
 import './ProfileSection.css';
 import ProfileLayout from '../../Components/ProfileLayout/ProfileLayout';
 import ResumeLayout from '../../Components/ResumeLayout/ResumeLayout';
+import DownArrow from '../../Components/DownArrow/DownArrow.js';
 
 class ProfileSection extends React.Component 
 {
@@ -12,7 +13,7 @@ class ProfileSection extends React.Component
 
                     <ProfileLayout />
                     <ResumeLayout />
-                    
+                    <DownArrow />
                 </div>
             </section>
         );

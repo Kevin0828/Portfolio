@@ -9,6 +9,11 @@
     color: white;
 }
 
+#responsive-navbar-nav
+{
+    justify-content: right;
+}
+
 .links {
     color: white;
 }

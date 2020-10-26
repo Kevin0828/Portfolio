@@ -2,15 +2,14 @@
 {
     position: absolute;
     justify-content: center;
-    text-align: left;
+    
 
     max-width: 300px;
     max-height: 500px;
-   
-    margin-top: 250px;
 
-    
+    margin-top: 200px;
 }
+
 
 .image-holder-animation
 {
@@ -19,7 +18,8 @@
     overflow: hidden;
 }
 
-.figure {
+.figure 
+{
 	overflow: hidden;
 }
 
@@ -58,8 +58,35 @@
 
 .card-project-links
 {
-    max-width: 40px;
-    max-height: 40px;
+    max-width: 30px;
+    max-height: 30px;
+}
+
+
+.project-card-skills-box
+{
+    display: inline; 
+    margin-right: 10px;
+    background-color: #0F5298;
+    padding: 5px 20px;
+    color: white;
+    border-radius: 25px ;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.project-card-text-description
+{
+    color: gray;
+}
+
+@media only screen and (max-width: 770px) 
+{
+    .project-card-skills-box
+    {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
 }
 
 @media only screen and (max-width: 574px) 

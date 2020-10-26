@@ -1,25 +1,61 @@
-
-
-
 {
-    "Card_1" :
+    "Card_1": 
     [
         {
-        "title": "J.P. Morgan Chase Hackathon Project",
-        "subTitle": "Web-App",
-        "cardLogo": "https://1000logos.net/wp-content/uploads/2020/04/J.P.-Morgan-Chase-Logo.png",
-    
-        "text": "Our elderly are having a hard time to communicate with this pandemic going on. Most systems are way too complex for them to catch up. We developed a very simple to use web-app where anyone can easily navigate and enjoy.",
+            "title": "J.P. Morgan Chase Hackathon Project",
+            "subTitle": "Web-Application",
+            "cardLogo": "https://miro.medium.com/max/700/1*NK2hmuq_GaccMB-mA_6pyw.jpeg",
+            "text": "Our elderly are having a hard time to communicate with this pandemic going on. Most systems are way too complex for them to catch up. We developed a very simple to use web-app where anyone can easily navigate and enjoy.",
+            
+            "skill_1": " React ",
+            "skill_2": " PHP ",
+            "skill_3": " SQL ",
 
-        "skill_1" : " React ", 
-        "skill_2" : " PHP ", 
-        "skill_3" : " SQL ",
-  
-        "link_1": "https://codeforgood.bemyapp.com/#/projects/5f88eb1d3c3b31001b191e88",
-        "link_2": "https://drive.google.com/file/d/1OzmH4O21x4SyDX5WJMr4AkjM8qMm8Id7/view",
+            "link_1": "https://codeforgood.bemyapp.com/#/projects/5f88eb1d3c3b31001b191e88",
+            "link_2": "https://drive.google.com/file/d/1OzmH4O21x4SyDX5WJMr4AkjM8qMm8Id7/view",
 
-        "image_1": "https://www.pngrepo.com/png/59321/180/information-icon.png",
-        "image_2": "https://cdn0.iconfinder.com/data/icons/controls-essential/48/v-02-512.png"
-    }
+            "image_1": "https://cdn1.iconfinder.com/data/icons/medicine-2-1/512/news-512.png",
+            "image_2": "https://cdn0.iconfinder.com/data/icons/pack-web-app-game/512/play-button-512.png"
+        }
+    ],
+
+    "Card_2": 
+    [
+        {
+            "title": "Prorate Multicar for employees at Univista Insurance.",
+            "subTitle": "Web-Application",
+            "cardLogo": "/src/Images/Project-ProrateMulticar.jpg",
+            "text": "While working at Univista auto insurance. My work co-workers spent minutes trying to do the math and be able to provide the customer how much each of their vehicle pays for insurance. This Web-app solved their problem. ",
+            
+            "skill_1": " JavaScript ",
+            "skill_2": " HTML ",
+            "skill_3": " CSS ",
+
+            "link_1": "https://github.com/Kevin0828/ProrateMulticar",
+            "link_2": "https://kevin0828.github.io/ProrateMulticar/",
+
+            "image_1": "https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-512.png",
+            "image_2": "https://cdn0.iconfinder.com/data/icons/pack-web-app-game/512/play-button-512.png"
+        }
+    ],
+
+    "Card_3": 
+    [
+        {
+            "title": "Prorate Multicar for employees at Univista Insurance.",
+            "subTitle": "Desktop Application",
+            "cardLogo": "https://miro.medium.com/max/700/1*NK2hmuq_GaccMB-mA_6pyw.jpeg",
+            "text": "Desktop Application fully developed in Java and JavaFX for the GUI. You will be able to create, save, edit and delete your notes. Easy to use for your reminders or simply your shopping carts",
+            
+            "skill_1": " JavaScript ",
+            "skill_2": " HTML ",
+            "skill_3": " CSS ",
+
+            "link_1": "https://github.com/Kevin0828/ProrateMulticar",
+            "link_2": "https://kevin0828.github.io/ProrateMulticar/",
+
+            "image_1": "https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-512.png",
+            "image_2": "https://cdn0.iconfinder.com/data/icons/pack-web-app-game/512/play-button-512.png"
+        }
     ]
 }
