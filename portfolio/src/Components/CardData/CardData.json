@@ -40,20 +40,17 @@
     "Card_3": 
     [
         {
-            "title": "Prorate Multicar for employees at Univista Insurance.",
+            "title": "NotePad",
             "subTitle": "Desktop Application",
-            "cardLogo": "https://miro.medium.com/max/700/1*NK2hmuq_GaccMB-mA_6pyw.jpeg",
+            "cardLogo": "https://github.com/Kevin0828/Portfolio/blob/main/portfolio/src/Images/NotePad.png?raw=true",
             "text": "Desktop Application fully developed in Java and JavaFX for the GUI. You will be able to create, save, edit and delete your notes. Easy to use for your reminders, your shopping notes, or anything you feel liked writing...",
             
             "skill_1": " Java ",
             "skill_2": " JavaFX ",
-            "skill_3": " CSS ",
 
-            "link_1": "https://github.com/Kevin0828/ProrateMulticar",
-            "link_2": "https://kevin0828.github.io/ProrateMulticar/",
+            "link_1": "https://github.com/Kevin0828/NotePad",
 
-            "image_1": "https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-512.png",
-            "image_2": "https://cdn0.iconfinder.com/data/icons/pack-web-app-game/512/play-button-512.png"
+            "image_1": "https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-512.png"
         }
     ]
 }

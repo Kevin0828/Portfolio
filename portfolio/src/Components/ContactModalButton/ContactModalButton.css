@@ -1,17 +1,5 @@
 
-
-.button-container
-{
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    
-    margin-top: 150px;
-    text-decoration: none;
-}
-
-
-.resume-btn
+.modal-contact-me-open
 {
     box-sizing: border-box;
     -webkit-appearance: none;
@@ -45,31 +33,16 @@
     text-decoration: none;
 }
 
-.resume-btn {
-    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+
+.modal-contact-me-open {
+    -webkit-transition: box-shadow 200ms ease-in-out, color 200ms ease-in-out;
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
     text-decoration: none;
 }
 
 
-.resume-btn:hover {
+.modal-contact-me-open:hover {
     box-shadow: 0 0 40px 40px #91ffa7 inset;
     text-decoration: none;
     color:black;
 }
-
-.resume-link:link {
-    text-decoration: none;
-  }
-  
-  .resume-link:visited {
-    text-decoration: none;
-  }
-  
-  .resume-link:hover {
-    text-decoration: none;
-  }
-  
-  .resume-link:active {
-    text-decoration: none;
-  }

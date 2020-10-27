@@ -10,7 +10,6 @@ class ProfileSection extends React.Component
         return (
             <section id = "profile">
                 <div className = "profile-wrapper">
-
                     <ProfileLayout />
                     <ResumeLayout />
                     <DownArrow />

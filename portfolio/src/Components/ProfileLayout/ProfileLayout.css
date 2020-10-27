@@ -34,6 +34,7 @@
 }
 
 
+
 .profile-img
 {
     border-radius: 100%;
@@ -46,13 +47,13 @@
 
     position: relative;
 
-    box-shadow: 10px 5px 50px 5px black;
+    box-shadow: 0px 0px 30px 0px white;
 
     transition: all 1.3s;
 }
 
 .profile-img:hover {
-    transform: scale(1.4);
+    transform: scale(1.2);
   }
 
 
@@ -88,4 +89,9 @@
     bottom:0;
     right:0;
 
+}
+
+.profile-layOut
+{
+    margin-top: 50px;
 }

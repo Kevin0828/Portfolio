@@ -39,7 +39,6 @@ class ProjectCard extends React.Component {
                         <Card.Link target="_blank" href={this.props.link_2}><img alt="" className="card-project-links" src={this.props.image_2} /></Card.Link>
                         <Card.Link target="_blank" href={this.props.link_3}><img alt="" className="card-project-links" src={this.props.image_3} /></Card.Link>
 
-
                     </Card.Body>
                 </Card>
             </div>
