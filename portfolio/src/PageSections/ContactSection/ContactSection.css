@@ -16,4 +16,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    animation: MoveUpDown-contact-wrapper 1s linear infinite;
+    position: relative;
 }
+
+  @keyframes MoveUpDown-contact-wrapper {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 10px;
+    }
+  }

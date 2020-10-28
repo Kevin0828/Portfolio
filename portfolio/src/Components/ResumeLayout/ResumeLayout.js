@@ -6,7 +6,7 @@ import ViewResume from '../ViewResume/ViewResume'
 const ResumeLayout = () =>
 {
     return(
-        <div className = "fade-in-slow">
+        <div className = "fade-in-slow view-resume-wrapper">
            <ViewResume />
         </div>
     );

@@ -10,7 +10,7 @@ function ContactModalButton() {
     return (
       <>
         <button className="modal-contact-me-open" onClick={() => setModalShow(true)}>
-          CLICK HERE TO CONTACT ME!
+          CLICK TO CONTACT ME!
         </button>
   
         <ContactModal

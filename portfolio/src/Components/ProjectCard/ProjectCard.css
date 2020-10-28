@@ -1,13 +1,7 @@
 .col-sm-6
 {
-    position: absolute;
-    justify-content: center;
-    
-
-    max-width: 300px;
-    max-height: 500px;
-
-    margin-top: 200px;
+    max-width: 70vw;
+    margin-top: 180px;
 }
 
 

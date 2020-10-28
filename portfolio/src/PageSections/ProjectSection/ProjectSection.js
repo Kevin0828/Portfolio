@@ -20,9 +20,9 @@ class ProjectSection extends React.Component {
 
                     <div className="container project-card-container">
                         <div className="row project-card-row">
-                                    {Card_Data_1.map((data) => (<ProjectCard {...data} />))}
-                                    {Card_Data_2.map((data) => (<ProjectCard {...data} />))}
-                                    {Card_Data_3.map((data) => (<ProjectCard {...data} />))}
+                                    {Card_Data_1.map((data) => (<ProjectCard key = {data}{...data} />))}
+                                    {Card_Data_2.map((data) => (<ProjectCard key = {data}{...data} />))}
+                                    {Card_Data_3.map((data) => (<ProjectCard key = {data}{...data} />))}
                         </div>
                     </div>
 

@@ -5,7 +5,7 @@ import ContactMe from '../../Components/ContactMe/ContactMe';
 
 function ContactModal(props) {
     return (
-      <Modal
+      <Modal 
         {...props}
         size="lg"
         aria-labelledby="contained-modal-title-vcenter"

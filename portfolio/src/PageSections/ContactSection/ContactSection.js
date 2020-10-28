@@ -9,7 +9,7 @@ class ContactSection extends React.Component {
             <section id="contact">
                 <div id="contact-wrapper">
                     <div className = "modal-button">
-                    <ContactModalButton />
+                        <ContactModalButton />
                     </div>
                 </div>
             </section>

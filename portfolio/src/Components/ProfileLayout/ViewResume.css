@@ -1,16 +1,5 @@
 
 
-.button-container
-{
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    
-    margin-top: 150px;
-    text-decoration: none;
-}
-
-
 .resume-btn
 {
     box-sizing: border-box;
@@ -73,3 +62,37 @@
   .resume-link:active {
     text-decoration: none;
   }
+
+
+
+  .button-container
+  {
+      margin-top: 40%;
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+
+    animation: MoveUpDown-button-container 2s linear infinite;
+    position: relative;
+  }
+  
+  @keyframes MoveUpDown-button-container {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 10px;
+    }
+  }
+  
+
+@media only screen and (max-width: 600px) 
+{
+    
+  .button-container
+  {
+      font-size: 5px;
+  }
+ 
+}
