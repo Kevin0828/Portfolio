@@ -1,6 +1,7 @@
 .col-sm-6
 {
     max-width: 70vw;
+    max-height: 50vh;
     margin-top: 180px;
 }
 
@@ -97,5 +98,7 @@
     {
         margin: 0 auto;
         margin-top: 150px;
+        max-width: 90vw;
+        max-height: 60vh;
     }
 }
