@@ -2,7 +2,7 @@
 {
     max-width: 70vw;
     max-height: 50vh;
-    margin-top: 180px;
+    margin: 20vh auto 0vh auto;
 }
 
 
@@ -96,9 +96,8 @@
 {
     .col-sm-6
     {
-        margin: 0 auto;
-        margin-top: 150px;
         max-width: 90vw;
         max-height: 60vh;
+        margin: 20vh auto 0vh auto;
     }
 }
