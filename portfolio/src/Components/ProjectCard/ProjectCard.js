@@ -16,7 +16,9 @@ class ProjectCard extends React.Component {
                     </div>
                     <Card.Body>
 
-                        <Card.Title>{this.props.title}</Card.Title>
+                        <Card.Title>
+                            {this.props.title}
+                        </Card.Title>
 
                         <Card.Subtitle>
                             {this.props.subTitle}
