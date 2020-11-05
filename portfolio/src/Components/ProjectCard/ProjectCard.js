@@ -2,12 +2,28 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import './ProjectCard.css';
 import LikeButton from '../LikeButton/LikeButton.js';
+import '../../BackEnd/API_FIREBASE/init-firebase';
 
-const  currentLikes = 4;
+var totalLikes = firebase.collection("Project-Likes").doc("TaeGGgOaVif2LnjmNrtD");
 
 
 class ProjectCard extends React.Component {
+
+    
+
     render() {
+
+        totalLikes.get().then(function(doc) {
+            if (doc.exists) {
+                console.log("Document data:", doc.data());
+            } else {
+                // doc.data() will be undefined in this case
+                console.log("No such document!");
+            }
+        }).catch(function(error) {
+            console.log("Error getting document:", error);
+        });
+
         return (
             <div className="col-sm-6">
                 <Card className="project-card-individual fade-in-fast">

@@ -2,8 +2,6 @@ import React from 'react';
 import 'react-bootstrap';
 import './LikeButton.css';
 
-const totalLikes = 150;
-const likedDB = false;
 
 class LikeButton extends React.Component {
 
@@ -11,9 +9,10 @@ class LikeButton extends React.Component {
         super();
         this.state = 
         {
-            likes: totalLikes,
+            likes: this.props.totalLikes,
             liked: "Like it",
-            isLiked : likedDB
+            isLiked : this.props.likedDB,
+            cardID: this.props.cardID
         };
     }
 
