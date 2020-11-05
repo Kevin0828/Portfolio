@@ -62,6 +62,11 @@
     max-height: 30px;
 }
 
+.card-project-like
+{
+    float: right;
+}
+
 
 .project-card-skills-box
 {

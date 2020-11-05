@@ -1,0 +1,21 @@
+.like-button {
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+    background: #ddd;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    display: block;
+    border-bottom: 2px #bbb solid;
+    transition: background .4s;
+    transition: border-bottom-color .12s;
+  }
+
+.liked {
+    background: #4267b2;
+    border-bottom-color: #375695;
+    color: #fff;
+  }

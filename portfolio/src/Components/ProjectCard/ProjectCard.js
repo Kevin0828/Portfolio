@@ -1,6 +1,9 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import './ProjectCard.css';
+import LikeButton from '../LikeButton/LikeButton.js';
+
+const  currentLikes = 4;
 
 
 class ProjectCard extends React.Component {
@@ -10,7 +13,7 @@ class ProjectCard extends React.Component {
                 <Card className="project-card-individual fade-in-fast">
                     <div className="image-holder-animation">
 
-                        <figure className = "project-card-logo">
+                        <figure className="project-card-logo">
                             <Card.Img variant="top" src={this.props.cardLogo} />
                         </figure>
                     </div>
@@ -30,16 +33,21 @@ class ProjectCard extends React.Component {
                             {this.props.text}
                         </Card.Text>
 
-                    
+
                         <Card.Text id="project-card-skills">
-                           <span className = "project-card-skills-box"> {this.props.skill_1} </span>
-                           <span className = "project-card-skills-box"> {this.props.skill_2} </span>
+                            <span className="project-card-skills-box"> {this.props.skill_1} </span>
+                            <span className="project-card-skills-box"> {this.props.skill_2} </span>
                         </Card.Text>
 
-    
+
                         <Card.Link target="_blank" href={this.props.link_1}><img alt="" className="card-project-links" src={this.props.image_1} /></Card.Link>
                         <Card.Link target="_blank" href={this.props.link_2}><img alt="" className="card-project-links" src={this.props.image_2} /></Card.Link>
                         <Card.Link target="_blank" href={this.props.link_3}><img alt="" className="card-project-links" src={this.props.image_3} /></Card.Link>
+
+                        <div className = "card-project-like">
+                            <LikeButton />
+                        </div>
+
 
                     </Card.Body>
                 </Card>
