@@ -1,4 +1,6 @@
-//import 'firebase/firestore';
+import firebase from 'firebase';
+import firebaseApp from 'firebase/app';
+
 
 
   var firebaseConfig = {
@@ -11,7 +13,8 @@
     appId: "1:249346569313:web:64c153a2aaae1e3eefa620",
     measurementId: "G-P0CQKJ140T"
   };
-
-  var defaultProject = firebase.initializeApp(firebaseConfig);
+  var LikesCollection = 'TaeGGgOaVif2LnjmNrtD';
+  var db = firebase.initializeApp(firebaseConfig);
   var defaultFirestore = firebaseApp.firestore();
 
+  export {db , defaultFirestore, LikesCollection} ;

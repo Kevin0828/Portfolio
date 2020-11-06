@@ -2,14 +2,14 @@ import React from 'react';
 import 'react-bootstrap';
 import './LikeButton.css';
 
-
 class LikeButton extends React.Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
+        
         this.state = 
         {
-            likes: this.props.totalLikes,
+            likes: this.props.cardLikesCount,
             liked: "Like it",
             isLiked : this.props.likedDB,
             cardID: this.props.cardID
