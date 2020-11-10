@@ -1,7 +1,4 @@
 import firebase from 'firebase';
-import firebaseApp from 'firebase/app';
-
-
 
   var firebaseConfig = {
     apiKey: "AIzaSyA11eWfLIuUoh1jrg4Tg9xr5YEoUjuxR5Y",
@@ -13,8 +10,9 @@ import firebaseApp from 'firebase/app';
     appId: "1:249346569313:web:64c153a2aaae1e3eefa620",
     measurementId: "G-P0CQKJ140T"
   };
-  var LikesCollection = 'TaeGGgOaVif2LnjmNrtD';
-  var db = firebase.initializeApp(firebaseConfig);
-  var defaultFirestore = firebaseApp.firestore();
 
-  export {db , defaultFirestore, LikesCollection} ;
+  firebase.initializeApp(firebaseConfig);
+  //var LikesCollection = 'TaeGGgOaVif2LnjmNrtD';
+  const firestore = firebase.firestore();
+
+  export default firestore;

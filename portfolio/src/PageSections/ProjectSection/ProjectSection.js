@@ -1,19 +1,30 @@
-import React from 'react';
+import React, { userContext, useEffect, useState } from 'react';
 import './ProjectSection.css';
 import ProjectCard from '../../Components/ProjectCard/ProjectCard';
-import CardDataFile from '../../Components/CardData/CardData.json';
-import TotalLikes from '../../BackEnd/GetLikesDB/GetLikesDB.js';
+import firestore from '../../BackEnd/API_FIREBASE/init-firebase.js';
 
-const Card_Data_1 = CardDataFile.Card_1;
-const Card_Data_2 = CardDataFile.Card_2;
-const Card_Data_3 = CardDataFile.Card_3;
-const totalLikes = TotalLikes;
+class ProjectSection extends React.Component {
 
+    state = {
+        cardData: null
+    }
 
-function ProjectSection() {
-{
-        
+    componentDidMount() {
+        firestore.collection('Card_Data')
+            .get()
+            .then(snapshot => {
+                const cardData = []
+                snapshot.forEach(doc => {
+                    const data = doc.data()
+                    cardData.push(data)
+                })
+                this.setState({ cardData: cardData })
+                console.log(snapshot)
+            })
+            .catch(error => console.log(error))
+    }
 
+    render() {
         return (
             <section id="projects">
                 <div className="project-wrapper">
@@ -23,10 +34,16 @@ function ProjectSection() {
 
                     <div className="container project-card-container">
                         <div className="row project-card-row">
-                            {console.log(totalLikes)}
-                                    {Card_Data_1.map((data) => (<ProjectCard key = {data}{...data} likes = {5} />))}
-                                    {Card_Data_2.map((data) => (<ProjectCard key = {data}{...data} likes = {4}/>))}
-                                    {Card_Data_3.map((data) => (<ProjectCard key = {data}{...data} likes = {3}/>))}
+
+                            {
+                                this.state.cardData &&
+                                this.state.cardData.map(cardData => {
+                                    return (
+                                        <ProjectCard key={cardData}{...cardData} />
+                                    )
+                                })
+                            }
+
                         </div>
                     </div>
                 </div>

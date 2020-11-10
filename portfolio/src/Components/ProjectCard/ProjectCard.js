@@ -45,7 +45,7 @@ class ProjectCard extends React.Component {
                         <Card.Link target="_blank" href={this.props.link_3}><img alt="" className="card-project-links" src={this.props.image_3} /></Card.Link>
 
                         <div className="card-project-like">
-                            <LikeButton cardLikesCount={this.props.likes} />
+                            <LikeButton cardLikesCount={this.props.cardLikes} />
                         </div>
 
 
