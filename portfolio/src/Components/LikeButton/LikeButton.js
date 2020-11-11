@@ -12,7 +12,6 @@ class LikeButton extends React.Component {
         this.state =
         {
             likes: this.props.cardLikesCount,
-            liked: "Like it",
             isLiked: this.props.cardLiked,
             reference: this.props.reference
         };
@@ -23,7 +22,6 @@ class LikeButton extends React.Component {
             this.setState({
                 likes: (this.state.likes + 1),
                 isLiked: true,
-                liked: "LIKED"
             })
 
         window.localStorage.setItem(this.state.reference, true);
@@ -43,10 +41,12 @@ class LikeButton extends React.Component {
 
 
     render() {
+
+
         return (
             <button className={this.state.isLiked ? 'like-button liked' : 'like-button'}
                 disabled={this.state.isLiked} onClick={this.likeClick.bind(this)}>
-                <i className={this.state.isLiked ? 'fas fa-thumbs-up' : 'far fa-thumbs-up'}></i> {this.state.liked} | {this.state.likes}</button>
+                <i className={this.state.isLiked ? 'fas fa-thumbs-up' : 'far fa-thumbs-up'}></i> {this.state.isLiked ? 'LIKED' : 'Like it'} | {this.state.likes}</button>
         );
     }
 
