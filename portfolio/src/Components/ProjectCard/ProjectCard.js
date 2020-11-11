@@ -6,7 +6,7 @@ import LikeButton from '../LikeButton/LikeButton.js';
 class ProjectCard extends React.Component {
 
     cardLiked = () => {
-        return (localStorage.getItem(this.props.reference))
+        return (window.localStorage.getItem(this.props.reference))
     }
 
     render() {

@@ -26,7 +26,7 @@ class LikeButton extends React.Component {
                 liked: "LIKED"
             })
 
-        localStorage.setItem(this.state.reference, true);
+        window.localStorage.setItem(this.state.reference, true);
         
         firestore.collection("Card_Data").doc(this.state.reference).set({
             cardLikes: this.state.likes + 1
