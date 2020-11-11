@@ -2,9 +2,12 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import './ProjectCard.css';
 import LikeButton from '../LikeButton/LikeButton.js';
-import TotalLikes from '../../BackEnd/API_FIREBASE/init-firebase';
 
 class ProjectCard extends React.Component {
+
+    cardLiked = () => {
+        return (localStorage.getItem(this.props.reference))
+    }
 
     render() {
 
@@ -45,7 +48,7 @@ class ProjectCard extends React.Component {
                         <Card.Link target="_blank" href={this.props.link_3}><img alt="" className="card-project-links" src={this.props.image_3} /></Card.Link>
 
                         <div className="card-project-like">
-                            <LikeButton cardLikesCount={this.props.cardLikes} />
+                            <LikeButton cardLikesCount={this.props.cardLikes} reference = {this.props.reference} cardLiked = {this.cardLiked()} />
                         </div>
 
 

@@ -6,7 +6,8 @@ import firestore from '../../BackEnd/API_FIREBASE/init-firebase.js';
 class ProjectSection extends React.Component {
 
     state = {
-        cardData: null
+        cardData: null,
+        cardData_ID: null
     }
 
     componentDidMount() {
@@ -14,11 +15,16 @@ class ProjectSection extends React.Component {
             .get()
             .then(snapshot => {
                 const cardData = []
+
                 snapshot.forEach(doc => {
                     const data = doc.data()
+                    
                     cardData.push(data)
                 })
-                this.setState({ cardData: cardData })
+
+                this.setState({ 
+                    cardData: cardData,
+                })
                 console.log(snapshot)
             })
             .catch(error => console.log(error))
@@ -39,7 +45,7 @@ class ProjectSection extends React.Component {
                                 this.state.cardData &&
                                 this.state.cardData.map(cardData => {
                                     return (
-                                        <ProjectCard key={cardData}{...cardData} />
+                                        <ProjectCard key={cardData}{...cardData}  />
                                     )
                                 })
                             }

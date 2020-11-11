@@ -3,17 +3,6 @@ import 'react-bootstrap';
 import './LikeButton.css';
 import firestore from '../../BackEnd/API_FIREBASE/init-firebase.js';
 
-function incrementLikeDB (cardLikesPath, cardLikes ) {
-    firestore.collection("Card_Data").doc(cardLikesPath).set({
-        cardLikes: cardLikes
-    }, { merge: true })
-        .then(function () {
-            console.log("Document successfully written!");
-        })
-        .catch(function (error) {
-            console.error("Error writing document: ", error);
-        });
-}
 
 class LikeButton extends React.Component {
 
@@ -24,23 +13,34 @@ class LikeButton extends React.Component {
         {
             likes: this.props.cardLikesCount,
             liked: "Like it",
-            isLiked: this.props.likedDB,
-            cardID: this.props.cardID
+            isLiked: this.props.cardLiked,
+            reference: this.props.reference
         };
     }
 
-    likeClick() 
-    {
+    likeClick() {
         if (!(this.state.isLiked)) {
             this.setState({
-                likes: this.state.likes + 1,
+                likes: (this.state.likes + 1),
                 isLiked: true,
                 liked: "LIKED"
             })
-        }
 
-        incrementLikeDB("7sL9zlDeHRNhFssP18zW", this.state.likes);
+        localStorage.setItem(this.state.reference, true);
+        
+        firestore.collection("Card_Data").doc(this.state.reference).set({
+            cardLikes: this.state.likes + 1
+        }, { merge: true })
+            .then(function () {
+                console.log("Document successfully written!");
+            })
+            .catch(function (error) {
+                console.error("Error writing document: ", error);
+            });
+        }
     }
+
+
 
     render() {
         return (
