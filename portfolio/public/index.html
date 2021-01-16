@@ -9,10 +9,34 @@
   <meta name="author" content="Kevin Fontela">
   <meta name="keywords" content="HTML,CSS,JavaScript, Kevin, Fontela, Kevin Fontela, kevin, fontela">
   <link rel="icon" href="./logo.ico">
+  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
   
-  
-
   <title>Kevin Fontela</title>
+
+  <style>
+    .preload{
+      background-image: url("/portfolio/src/Images/preload.gif");
+      position: fixed;
+      width: 100vw;
+      height: 1000vh;
+      z-index: 999999;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .preload-finished{
+      opacity: 0;
+      pointer-events: none;
+    }
+    </style>
+
+
+  
+  </style>
+
+  
 
   <script crossorigin src="https://unpkg.com/react/umd/react.production.min.js" ></script>
 
@@ -35,17 +59,20 @@
 
 <body>
 
-  <noscript>Hello! This is Kevin Fontela's Portfolio. Please, enable JavaScript on your device, thanks!.</noscript>
-
+  <noscript>Hello! This is Kevin Fontela's Portfolio. Please, enable JavaScript on your device to check my site, thanks!.</noscript>
+  
   <div id="root"></div>
 
-  <script src="/__/firebase/7.21.1/firebase-app.js"></script>
+</body>
+
+
+<script src="/__/firebase/7.21.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
 <script src="/__/firebase/7.21.1/firebase-analytics.js"></script>
-
 <script src = "../src/BackEnd/API_FIREBASE/init-firebase.js"></script>
 
 
-</body>
+
+
 </html>

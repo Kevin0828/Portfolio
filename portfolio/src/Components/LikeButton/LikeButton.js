@@ -1,7 +1,7 @@
 import React from 'react';
 import 'react-bootstrap';
 import './LikeButton.css';
-import firestore from '../../BackEnd/API_FIREBASE/init-firebase.js';
+import firestore from '../../BackEnd/GetLikesDB/init-firebase.js';
 
 
 class LikeButton extends React.Component {

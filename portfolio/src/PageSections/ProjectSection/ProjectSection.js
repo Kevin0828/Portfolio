@@ -1,7 +1,8 @@
 import React, { userContext, useEffect, useState } from 'react';
 import './ProjectSection.css';
 import ProjectCard from '../../Components/ProjectCard/ProjectCard';
-import firestore from '../../BackEnd/API_FIREBASE/init-firebase.js';
+import firestore from '../../BackEnd/GetLikesDB/init-firebase.js';
+//import firestore from '../../BackEnd/API_FIREBASE/init-firebase.js';
 
 class ProjectSection extends React.Component {
 
