@@ -2,11 +2,30 @@ import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import './NavBar.css';
 import ContactModal from '../../Components/ContactModal/ContactModal';
-import Resume from '../../Documents/Resume.pdf';
-
+import Resume from '../../Documents/Kevin_Fontela_Resume.pdf';
 
 const NavBar = () => 
 {
+        const openPDF = () => {
+          const pdfWindow = window.open("Kevin_Fontela_Resume.pdf");
+          const title     = "Kevin_Fontela_Resume.pdf";
+          const URI       = "Kevin_Fontela_Resume.pdf";
+          const html      = `
+            <html>
+              <head>
+                <title>${title}</title>
+              </head>
+              <body style="margin:0 0 0 0">
+                <embed width="100%" height="100%" src=${Resume} type="application/pdf">
+              </body>
+            </html>
+          `;
+      
+          pdfWindow.document.write(html);
+          pdfWindow.document.close();
+          pdfWindow.history.pushState(null, "Kevin_Fontela_Resume.pdf", URI);
+        };
+
     const [modalShow, setModalShow] = React.useState(false);
     
     return (
@@ -16,7 +35,7 @@ const NavBar = () =>
             <Navbar.Collapse id="responsive-navbar-nav ">
             
                 <Nav className="mr-auto">
-                    <Nav.Link target="_blank" href={Resume} rel="noopener noreferrer">Resume</Nav.Link>
+                    <Nav.Link onClick={openPDF} rel="noopener noreferrer">Resume</Nav.Link>
                     <Nav.Link onClick={() => setModalShow(true)} >Contact Me</Nav.Link>
                 </Nav>
                 <Nav>

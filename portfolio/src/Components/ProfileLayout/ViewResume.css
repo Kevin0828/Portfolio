@@ -21,7 +21,7 @@
     font-size: 1rem;
     font-weight: 400;
     line-height: 1;
-    margin: 20px;
+    margin-bottom: 40px;
     padding: 1.2em 2.8em;
     text-decoration: none;
     text-align: center;
@@ -72,20 +72,8 @@
       display: flex;
       justify-content: center;
       text-decoration: none;
-
-    animation: MoveUpDown-button-container 2s linear infinite;
-    position: relative;
+      position: relative;
   }
-  
-  @keyframes MoveUpDown-button-container {
-    0%, 100% {
-      bottom: 0;
-    }
-    50% {
-      bottom: 10px;
-    }
-  }
-  
 
 @media only screen and (max-width: 600px) 
 {
