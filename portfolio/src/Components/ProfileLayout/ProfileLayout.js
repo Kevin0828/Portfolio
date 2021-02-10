@@ -16,7 +16,7 @@ const ProfileLayout = () => {
         <head>
           <title>${title}</title>
         </head>
-        <body style="margin:0 0 0 0">
+        <body">
            <embed width="100%" height="100%" src=${Resume} type="application/pdf">
         </body>
       </html>
